@@ -1,0 +1,84 @@
+body {
+    font-family: 'Amatic SC',cursive;
+}
+
+div.background{
+    
+	background-color: #90EE90;
+}
+div.principal{
+    position: relative;
+    margin: 2%;
+}
+
+div.fijo{
+	border-style: solid;
+	border-width:thin;
+	border-color:#000000;
+	border-radius:5%;
+	font-size:100%;
+	color:#000000;
+	background-color:#FFFFFF;
+	position:fixed;
+    bottom:2%;
+    right:1%;
+	z-index: 3;
+	}
+
+div.titulo{
+	position:relative;
+	text-align: center;
+	font-size:450%;
+	color: #000000;
+	z-index: 2;
+    }
+div.menu_horizontal{
+    position: relative;
+	top:30%;
+    width: 100%;
+}
+
+ul#lista_horizontal ul {
+   display:none;
+}
+ul#lista_horizontal li:hover > ul
+{
+   display:block;
+   }
+ul {
+	position: relative;
+	top:35%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #FFFFFF;
+    padding: 15px;
+    text-decoration: none;
+}
+
+div.bienvenido{
+    position: relative;
+    top: 40%;
+}
+
+h1{
+	color:#000000;
+}
+
+
+h4{
+	color: #000000;
+}
+
+div.comidas{
+	position:relative;
+	top:85%;
+}

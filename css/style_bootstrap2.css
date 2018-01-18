@@ -1,0 +1,35 @@
+body
+{
+    margin: 1em;
+    background-color: #90EE90;
+}
+#background
+{
+   background-color: #90EE90;
+   float: left;
+    width: 100%;
+   
+}
+#clear div{
+    display: inline-block;
+    left: 50%;
+    transform: translate(-165%);
+}
+.recuadro{
+    position: relative;
+    background-color: 	#3CB371;
+    color: #000000;
+    margin: 1%;  
+    padding: 1%;
+    font-size: 100%;
+    width: 20%;
+
+
+}
+
+h1
+{   
+    font-size: 250%;
+    text-align: center;
+    margin: 1%;
+}

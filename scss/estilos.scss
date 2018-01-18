@@ -1,0 +1,546 @@
+//------------------PATRON DE COLORES---------------------
+//--------------------------------------------------------
+$texto:#111111;
+$principal:#12AFAF;
+$secundario:#009500;
+
+body{
+   // font-family: 'Open Sans', sans-serif;
+    color: $texto;
+}
+
+.encabezado{
+    padding: .5rem 0; 
+    color: #fff;
+    background: $texto;
+    transition: all .5s ease;
+}
+
+#encabezado.fondo-menu {
+    background: #373a3c;
+    padding: 1rem 0;
+}
+
+.encabezado .container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.encabezado .logo{
+    width: 150px;
+    height: auto;
+}
+
+.boton-buscar, 
+.boton-menu {
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0,5rem;
+}
+
+.boton-buscar:focus, 
+.boton-menu:focus {
+    outline: 0;
+}
+
+.boton-buscar{
+    margin-left: auto;
+    margin-right: .8rem;
+}
+
+#bloque-buscar {
+    flex: 1 1 100%; /* expandir barra buscador */
+}
+
+.contenedor-bloque-buscar {
+    display: flex;
+    height: 3rem;
+    margin: 1rem 0;
+}
+
+
+.contenedor-bloque-buscar input[type="text"] {
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+    flex: 1 1 auto;
+}
+
+.contenedor-bloque-buscar input[type="submit"] {
+    flex: 1 1 auto;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    padding: 0 1rem;
+    background: $principal;
+    color: #fff;
+}
+    
+#menu-principal {
+    flex: 1 1 100%;
+    z-index: 5;
+}
+
+#menu-principal ul{
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+#menu-principal ul a{
+    text-decoration: none;
+    display: block;
+    padding: .8rem 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 1px solid #8c8888;
+}
+
+#menu-principal ul a:hover, 
+#menu-principal ul li.active a{
+    color: $principal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.texto-encabezado {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+.texto-encabezado .display-4 {
+    color: #fff;
+    margin-top: 4rem;
+    font-weight: 400;
+}
+
+.texto-encabezado .subtitulo-1 {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.texto-encabezado .btn-primary {
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: $principal;
+    border-color: transparent;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active:hover {
+    background-color: $secundario;
+    border-color: transparent;
+}
+
+.bienvenidos {
+    background: url("../images/fondo-encabezado.jpg") no-repeat center top;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed !important;
+}
+
+.encabezado {
+    padding: .5rem 0;
+}
+
+.flecha-bajar a{
+    color: #fff;
+    font-size: 4rem;
+    display: inline-block;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
+
+#flecha-agencia:hover, 
+#flecha-agencia:focus, 
+#flecha-agencia:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+@keyframes flecha-animada {
+    from {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.agencia {
+    background: $principal;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.agencia .display-5{
+    text-align: center;
+    font-weight: bold;
+}
+
+.agencia .subtitulo-2 {
+    font-size: 1rem;
+}
+
+.agencia .agencia_prog {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tu-mejor-eleccion {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.tu-mejor-eleccion .titulo-2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.tu-mejor-eleccion .titulo-2 .mejor-eleccion{
+    color: $principal;
+}
+
+.tu-mejor-eleccion .subtitulo-2 {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tu-mejor-eleccion .listas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tu-mejor-eleccion .listas .lista-izquierda, .lista-derecha {
+    text-align: center;
+    list-style: none;
+    padding: 1rem;
+}
+
+.tu-mejor-eleccion .listas .app1, .app2, .app3, .app4, .app5, .app6{
+    width: 7rem;
+    height: 10rem;
+}
+
+.tu-mejor-eleccion .listas .img1, .img2, .img3, .img4, .img5, .img6{
+    font-size: 2.3rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+.tu-mejor-eleccion .listas .textoapp1, .textoapp2, .textoapp3, .textoapp4, .textoapp5, .textoapp6{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nuestros-servicios {
+    background: url("../images/fondo-servicios.jpg") no-repeat center top;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nuestros-servicios .titulo-3 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.nuestros-servicios .servicio-1 {
+    height: 5.5rem;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nuestros-servicios .servicio-2, .servicio-3 {
+    height: 5.5rem;
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.nuestros-servicios .servicio-1 .img1 {
+    flex: 0 0 60px;
+    overflow: hidden;
+    margin-right: 1rem;
+    height: 5.5rem;
+}
+
+.nuestros-servicios .servicio-2 .img2, .servicio-3 .img3 {
+    flex: 0 0 60px;
+    overflow: hidden;
+    margin-right: 1rem;
+    height: 5.5rem;
+}
+
+.nuestros-servicios .servicio-1 .text1 {
+    font-size: 1rem;
+    margin: 0;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nuestros-servicios .servicio-2 .text2, .servicio-3 .text3 {
+    font-size: 1rem;
+    margin: 0;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nuestros-servicios .servicio-1 .flecha-1, .servicio-2 .flecha-2, .servicio-3 .flecha-3 {
+    font-size: 2rem;
+    align-items: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $principal;
+    list-style: none;
+    text-decoration:none; 
+}
+
+.nuestros-servicios .servicio-1 .flecha-1:hover, 
+.nuestros-servicios .servicio-1 .flecha-1:focus, 
+.nuestros-servicios .servicio-1 .flecha-1:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+.nuestros-servicios .servicio-2 .flecha-2:hover, 
+.nuestros-servicios .servicio-2 .flecha-2:focus, 
+.nuestros-servicios .servicio-2 .flecha-2:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+.nuestros-servicios .servicio-3 .flecha-3:hover, 
+.nuestros-servicios .servicio-3 .flecha-3:focus, 
+.nuestros-servicios .servicio-3 .flecha-3:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+
+
+
+
+
+
+
+
+.ultimos-projectos {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ultimos-projectos h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+}
+.ultimos-projectos a h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: $texto;
+}
+
+.ultimos-projectos .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ultimos-projectos .container .owl-carousel #enlace-1, #enlace-2, #enlace-3, #enlace-4, #enlace-5, #enlace-6  {
+    text-decoration: none;
+}
+
+.ultimos-projectos .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin: .3rem 0;
+}
+
+.ultimos-projectos .owl-prev,
+.ultimos-projectos .owl-next {
+    font-size: 3rem;
+    margin: 0 .5rem;
+    color: $principal;
+    transition: all .5s ease;
+}
+
+.ultimos-projectos .owl-prev:hover, 
+.ultimos-projectos .owl-prev:focus, 
+.ultimos-projectos .owl-prev:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+.ultimos-projectos .owl-next:hover, 
+.ultimos-projectos .owl-next:focus, 
+.ultimos-projectos .owl-next:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+
+
+
+
+
+
+
+.piedepagina {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+} 
+
+.piedepagina .copyright {
+    margin-bottom: 0.5rem;
+}
+
+.piedepagina .redes-sociales {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.piedepagina .redes-sociales a {
+    color: $principal;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.redes-sociales a:hover, 
+.redes-sociales a:focus, 
+.redes-sociales a:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ir-arriba {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: $principal;
+    text-decoration: none;
+    display: none;
+    transition: all .5s ease;
+    z-index: 99999;
+}
+
+.ir-arriba:hover, 
+.ir-arriba:focus, 
+.ir-arriba:active:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: $secundario;
+}
